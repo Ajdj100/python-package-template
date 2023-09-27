@@ -6,9 +6,9 @@ name: pylint
 on:
   push:
     branches: [ "main" ]
-    paths: 
-    # - 'hello_world.py' 
-    # - 'lint.py' 
+    paths:
+    - './src/python_package/hello_world.py'
+    - './src/python_package/lint.py'
 
 jobs:
   build:
@@ -22,9 +22,9 @@ jobs:
       with:
         python-version: "3.10"
     - name: Install dependencies
-      run: | 
-        python -m pip install --upgrade pip 
-        pip install pylint 
-    - name: Lint with pylint 
-      run: | 
-        python lint.py 
+      run: |
+        python -m pip install --upgrade pip
+        pip install pylint
+    - name: Lint with pylint
+      run: |
+        python lint.py
