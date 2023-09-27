@@ -7,8 +7,8 @@ on:
   push:
     branches: [ "main" ]
     paths:
-    - 'hello_world.py'
-    - 'lint.py'
+    - 'src/python_package/hello_world.py'
+    - 'src/python_package/lint.py'
 
 jobs:
   build:
