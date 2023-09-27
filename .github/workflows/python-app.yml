@@ -6,7 +6,7 @@ name: pylint
 on:
   push:
     branches: [ "main" ]
-    paths:
+    #paths:
     # - 'hello_world.py'
     # - 'lint.py'
 
